@@ -33,7 +33,7 @@ def create_gauge_chart(probability):
         'axis' : {
           'range' : [0, 100],
           'tickwidth' : 1,
-          'tickcolor' : "black"'
+          'tickcolor' : "black"
         },
         'bar' : {
           'color' : color

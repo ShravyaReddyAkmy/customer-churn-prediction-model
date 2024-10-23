@@ -4,6 +4,7 @@ import numpy as np
 import pickle
 import os
 from openai import OpenAI
+import utils.py as ut
 
 client = OpenAI(base_url="https://api.groq.com/openai/v1",
                 api_key=os.environ.get("GROQ_API_KEY"))
@@ -70,7 +71,7 @@ def make_predictions(input_df, input_dict):
         st.write(f"The customer has a {avg_probability:.2%} probability of churning.")
 
     with col2:
-        fig_probs = ut.create_model_probability_chart(robabilities)
+        fig_probs = ut.create_model_probability_chart(probabilities)
         st.plotly_chart(fig_probs, use_container_width=True)
 
     return avg_probability
