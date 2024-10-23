@@ -37,7 +37,7 @@ def create_gauge_chart(probability):
         },
         'bar' : {
           'color' : color
-        }
+        },
         'bgcolor' : "rgba(0, 0, 0, 0)",
         'borderwidth' : 2,
         'bordercolor' : "black",
